@@ -1,6 +1,7 @@
 package Maze;
 
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Maze {
 	private int row;
@@ -27,6 +28,7 @@ public class Maze {
 		
 		if(grid[row-1][col-1]==0){
 			row--; col--;
+			
 		}
 		if(grid[row-1][col]==0){
 			row--;
@@ -73,9 +75,24 @@ public class Maze {
 	public static void main(String[] args) {
 		
 		Scanner in = new Scanner(System.in);
+		Stack ki = new Stack();
+		
+		
 		System.out.print("Maze Problem : ");
 		in.hasNext();
 		System.out.println(" ");
+		ki.pop();
+		ki.pop();
+		ki.pop();
+		ki.pop();
+		ki.pop();
+		ki.pop();
+		ki.pop();
+		ki.pop();
+		ki.pop();
+		ki.pop();
+		ki.pop();
+		ki.pop();
 		
 		System.out.println("Entrance = ");
 		System.out.println("Exit = ");
